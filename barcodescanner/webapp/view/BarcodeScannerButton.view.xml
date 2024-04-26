@@ -1,0 +1,21 @@
+<mvc:View controllerName="barcodescanner.controller.BarcodeScannerButton"
+        xmlns:ndc="sap.ndc"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m">
+    <!-- <Page id="page" title="{i18n>title}">
+        <content />
+    </Page> -->
+	<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+		<ndc:BarcodeScannerButton
+			id="sampleBarcodeScannerButton"
+			scanSuccess="onScanSuccess"
+			scanFail="onScanError"
+			inputLiveUpdate="onScanLiveupdate"
+			dialogTitle="Barcode Scanner Button Sample"
+		/>
+		<HBox id="_IDGenHBox1" class="sapUiTinyMarginTop">
+			<Label id="_IDGenLabel1" text="Scan Result:"/>
+			<Text id="sampleBarcodeScannerResult" text="" class="sapUiTinyMarginBegin"/>
+		</HBox>
+	</VBox>    
+</mvc:View>
